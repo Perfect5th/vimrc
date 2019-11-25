@@ -120,3 +120,10 @@ set guifont=Fira\ Mono\ Regular\ 9
 " youcompleteme settings
 :inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 set completeopt=menuone
+
+" ignore terminal when switching buffers
+" https://vi.stackexchange.com/a/16709
+augroup termIgnore
+	autocmd!
+	autocmd TerminalOpen * set nobuflisted
+augroup END
