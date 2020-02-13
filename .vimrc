@@ -46,6 +46,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'morhetz/gruvbox'
 Plugin 'coldnight/pretty_json.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'wlangstroth/vim-racket'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
