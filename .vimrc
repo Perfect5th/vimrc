@@ -47,6 +47,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'coldnight/pretty_json.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'wlangstroth/vim-racket'
+Plugin 'neovimhaskell/haskell-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -85,6 +86,7 @@ nnoremap <S-Tab> :bprevious<CR>
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
 
+set virtualedit=all " Allows space-padded editing beyond line end
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 set termencoding=utf-8
 set encoding=utf-8
@@ -115,6 +117,8 @@ nnoremap <C-H> <C-W><C-H>
 
 set splitbelow
 set splitright
+
+set autoread
 
 set guifont=Fira\ Mono\ Regular\ 9
 
